@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='estilo.css' rel='stylesheet'>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="Ingreso">
+        <form id="Ingreso" name="Ingreso" style="visibility: visible">
+            <label for="email">Usuario:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" name="Password" required><br>
+            <br>
+            <input type="submit" value="Ingresar"><input type="submit" value="Registrarse"><input type="reset"
+                value="Resetear">
+        </form>
+    </div>
+
+    <div class="Formulario">
+        <form id="registro" name="registro" style="visibility: hidden">
+            <label for="email">Usuario:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <br>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" name="Password" required><br>
+            <br>
+            <label for="Password">Repeat Password:</label><br>
+            <input type="password" id="Password" name="Password" required><br>
+            <br>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <br>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" required><br>
+            <br>
+            <label for="Profesion">Profesion:</label><br>
+            <select id="Profesion" name="Profesion" required>
+
+                <option value="seleccion">Seleccionar</option>
+                <option value="Analista de Sistemas">Analista de Sistemas</option>
+                <option value="Ingeniero de Software">Ingeniero de Software</option>
+                <option value="Data Analyst">Data Analyst</option>
+            </select><br>
+            <br>
+            <label for="captcha">vAlido Ingr34o:</label><br>
+            <input type="text" id="captcha" name="captcha" required><br>
+            <br>
+            <input type="submit" value="Ingresar"><input type="submit" value="Registrarse"><input type="reset"
+                value="Resetear">
+        </form>
+    </div>
+</body>
+
+</html>
