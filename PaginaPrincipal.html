@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href='estilo.css' rel='stylesheet'>
+    <script src="validaciones.js"></script>
     <title>Formulario</title>
 </head>
 
 <body>
     <div class="Ingreso">
-        <div class="logo">LOGO</div>
-        <form id="Ingreso" name="Ingreso" style="visibility: visible">
-            <label for="email">Usuario:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="Password">Password:</label><br>
-            <input type="password" id="Password" name="Password" required><br>
+        <form action="" method="post" id= "form1" name="form1" style= "visibility : hidden">
+        
+        
+            <label for="mail">Usuario:</label><br>
+            <input type="email" id="mail" name="mail" ><br>
+            <label for="contra">Password:</label><br>
+            <input type="password" id="contra" name="contra" ><br>
             <br>
-            <input type="submit" value="Ingresar"><input type="submit" value="Registrarse"><input type="reset"
-                value="Resetear">
+            <input type="submit" value="Ingresar">
+            <input type="submit" value="Registrarse" onClick="prenderRegistro()">
+        
+         
         </form>
     </div>
-
     <div class="Formulario">
-        <form id="registro" name="registro" style="visibility: hidden">
+        <form action="" method="post" id= "form" name="form" style= "visibility : visible">
+    
             <label for="email">Usuario:</label><br>
             <input type="email" id="email" name="email" required><br>
             <br>
             <label for="Password">Password:</label><br>
             <input type="password" id="Password" name="Password" required><br>
             <br>
-            <label for="Password">Repeat Password:</label><br>
-            <input type="password" id="Password" name="Password" required><br>
+            <label for="Password2">Repeat Password:</label><br>
+            <input type="password" id="Password2" name="Password2" required><br>
             <br>
             <label for="fname">Nombre:</label><br>
-            <input type="text" id="fname" name="fname" required><br>
+            <input type="text" id="fname" name="fname"required ><br>
             <br>
             <label for="lname">Apellido:</label><br>
             <input type="text" id="lname" name="lname" required><br>
@@ -55,8 +60,8 @@
             <label for="captcha">vAlido Ingr34o:</label><br>
             <input type="text" id="captcha" name="captcha" required><br>
             <br>
-            <input type="submit" value="Ingresar"><input type="submit" value="Registrarse"><input type="reset"
-                value="Resetear">
+            <input type="submit" value="Registrar" id="Registrar" onClick="hacerRegistro()">
+        
         </form>
     </div>
 </body>
