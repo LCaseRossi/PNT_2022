@@ -13,25 +13,25 @@
 
 <body>
     <div class="Ingreso">
-        <form action="" method="post" id= "form1" name="form1" style= "visibility : hidden">
+        <form action="" method="post" id= "form1" name="form1" style= "visibility : visible">
         
         
             <label for="mail">Usuario:</label><br>
             <input type="email" id="mail" name="mail" ><br>
             <label for="contra">Password:</label><br>
-            <input type="password" id="contra" name="contra" ><br>
+            <input type="password" id="contra" name="contra"><br>
             <br>
-            <input type="submit" value="Ingresar">
-            <input type="submit" value="Registrarse" onClick="prenderRegistro()">
+            <input type="button" value="Ingresar">
+            <input type="button" value="Registrarse" onClick="prenderRegistro()">
         
          
         </form>
     </div>
     <div class="Formulario">
-        <form action="" method="post" id= "form" name="form" style= "visibility : visible">
+        <form action="" method="post" id= "form" name="form" style= "visibility : hidden">
     
             <label for="email">Usuario:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" value="" required><br>
             <br>
             <label for="Password">Password:</label><br>
             <input type="password" id="Password" name="Password" required><br>
@@ -60,7 +60,8 @@
             <label for="captcha">vAlido Ingr34o:</label><br>
             <input type="text" id="captcha" name="captcha" required><br>
             <br>
-            <input type="submit" value="Registrar" id="Registrar" onClick="hacerRegistro()">
+            <div id="mensajeErrores"></div>
+            <input type="button" value="Registrar" id="Registrar" onClick="hacerRegistro()">
         
         </form>
     </div>
